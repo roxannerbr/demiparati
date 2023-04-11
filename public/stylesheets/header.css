@@ -1,0 +1,123 @@
+marquee {
+    background-color: var(--beige);
+    color: var(--marron);
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .logo {
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.container .logo a img {
+    transition: all 0.3s;
+}
+
+.container .logo a img:hover {
+    transform: scale(1.2);
+}
+
+.container .burger label {
+    width: 40px;
+    background-color: var(--rosaviejo);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--beige);
+}
+
+.container .burger .nav-desktop {
+    display: none;
+}
+
+@media(min-width:425px) {
+    .container input[type="checkbox"] {
+        display: none;
+    }
+
+    .container input[type="checkbox"]:checked~nav {
+        display: none;
+    }
+
+}
+
+@media(min-width:768px) {
+    .container {
+        background-color: var(--beige);
+    }
+
+    .container .burger label {
+        display: none;
+    }
+
+    .container .burger .nav-desktop {
+        display: flex;
+        width: 100%;
+    }
+
+    .container .burger .nav-desktop ul {
+        list-style: none;
+        display: inline-flex;
+    }
+
+    .container .burger .nav-desktop li {
+        margin: 10px 10px 0 10px;
+        padding: 10px;
+    }
+
+    .container .burger .nav-desktop ul li:hover {
+        transform: scale(1.1);
+        color: var(--marron);
+    }
+
+    .container .burger .nav-desktop ul li a:hover {
+        transform: scale(1.1);
+        color: var(--marron);
+    }
+
+    .container .burger .nav-desktop li {}
+
+    .container .nav-desktop ul li a {
+        color: var(--rosaviejo);
+    }
+
+
+
+
+    /*DESPLEGABLE */
+
+    /*ITEMS DESPLEGABLE*/
+
+    /*ENLACE DESPLEGABLE*/
+
+    /*DESPLEGABLE HOVER*/
+
+
+}
+
+
+
+
+@media(min-width:1024px) {
+
+    .container .burger label {
+        display: none;
+    }
+
+    .container .nav-desktop ul li a {
+        font-size: 20px;
+    }
+
+}
